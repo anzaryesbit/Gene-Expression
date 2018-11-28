@@ -10,7 +10,7 @@ def aminoacid(a, b, c):
     elif a == 'C':
         a1 = 'G'
     elif a == 'c':
-        a1 == 'G'
+        a1 = 'G'
     elif a == 'A':
         a1 = 'U'
     elif a == 'a':
@@ -29,7 +29,7 @@ def aminoacid(a, b, c):
     elif b == 'C':
         b1 = 'G'
     elif b == 'c':
-        b1 == 'G'
+        b1 = 'G'
     elif b == 'A':
         b1 = 'U'
     elif b == 'a':
@@ -48,7 +48,7 @@ def aminoacid(a, b, c):
     elif c == 'C':
         c1 = 'G'
     elif c == 'c':
-        c1 == 'G'
+        c1 = 'G'
     elif c == 'A':
         c1 = 'U'
     elif c == 'a':
@@ -70,7 +70,7 @@ def aminoacid(a, b, c):
     elif a1 == 'C':
         a2 = 'G'
     elif a1 == 'c':
-        a2 == 'G'
+        a2 = 'G'
     elif a1 == 'A':
         a2 = 'U'
     elif a1 == 'a':
@@ -89,7 +89,7 @@ def aminoacid(a, b, c):
     elif b1 == 'C':
         b2 = 'G'
     elif b1 == 'c':
-        b2 == 'G'
+        b2 = 'G'
     elif b1 == 'A':
         b2 = 'U'
     elif b1 == 'a':
@@ -108,7 +108,7 @@ def aminoacid(a, b, c):
     elif c1 == 'C':
         c2 = 'G'
     elif c1 == 'c':
-        c2 == 'G'
+        c2 = 'G'
     elif c1 == 'A':
         c2 = 'U'
     elif c1 == 'a':
