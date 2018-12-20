@@ -1,3 +1,11 @@
+'''
+
+                            Online Python Compiler.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+
 def aminoacid(a, b, c):
     dna_sequence = a + b + c
     print('DNA Sequence: ' + dna_sequence)
@@ -80,7 +88,7 @@ def aminoacid(a, b, c):
     elif a1 == 'u':
         a2 = 'A'
     else:
-        print('that is not a nucleotide base')
+        print('trna error: that is not a nucleotide base')
 
     if b1 == 'G':
         b2 = 'C'
@@ -90,16 +98,16 @@ def aminoacid(a, b, c):
         b2 = 'G'
     elif b1 == 'c':
         b2 = 'G'
+    elif b1 == 'U':
+        b2 = 'A'
+    elif b1 == 'U':
+        b2 = 'A'
     elif b1 == 'A':
         b2 = 'U'
     elif b1 == 'a':
         b2 = 'U'
-    elif b1 == 'T':
-        b2 = 'A'
-    elif b1 == 't':
-        b2 = 'A'
     else:
-        print('that is not a nucleotide base')
+        print('trna error: that is not a nucleotide base')
 
     if c1 == 'G':
         c2 = 'C'
@@ -118,7 +126,8 @@ def aminoacid(a, b, c):
     elif c1 == 'u':
         c2 = 'A'
     else:
-        print('that is not a nucleotide base')
+        print('trna error: that is not a nucleotide base')
+
     trna_sequence = a2 + b2 + c2
     print('tRNA Sequence: ' + trna_sequence)
 
@@ -296,4 +305,16 @@ def aminoacid(a, b, c):
     else:
         print('There is no amino acid!')
 
-aminoacid('G', 'C', 'T')
+input1 = input("first dna nucleotide base ")
+input2 = input("second dna nucleotide base ")
+input3 = input("third dna nucleotide base ")
+
+aminoacid(input1, input2, input3)
+
+repeat = input("do you want to put in another nucleotide base? [y/n] ")
+while repeat == 'y':
+    input1 = input("first dna nucleotide base: ")
+    input2 = input("second dna nucleotide base: ")
+    input3 = input("third dna nucleotide base: ")
+    aminoacid(input1, input2, input3)
+    repeat = input("do you want to put in another nucleotide base? [y/n] ")
