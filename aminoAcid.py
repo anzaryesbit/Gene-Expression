@@ -20,7 +20,7 @@ def aminoacid(a, b, c):
     elif a == 't':
         a1 = 'A'
     else:
-        print('that is not a nucleotide base')
+        none
 
     if b == 'G':
         b1 = 'C'
@@ -39,7 +39,7 @@ def aminoacid(a, b, c):
     elif b == 't':
         b1 = 'A'
     else:
-        print('that is not a nucleotide base')
+        none
 
     if c == 'G':
         c1 = 'C'
@@ -58,7 +58,7 @@ def aminoacid(a, b, c):
     elif c == 't':
         c1 = 'A'
     else:
-        print('that is not a nucleotide base')
+        none
     mrna_sequence = a1 + b1 + c1
     print('mRNA Sequence: ' + mrna_sequence)
 
@@ -80,7 +80,7 @@ def aminoacid(a, b, c):
     elif a1 == 'u':
         a2 = 'A'
     else:
-        print('trna error: that is not a nucleotide base')
+        none
 
     if b1 == 'G':
         b2 = 'C'
@@ -99,7 +99,7 @@ def aminoacid(a, b, c):
     elif b1 == 'a':
         b2 = 'U'
     else:
-        print('trna error: that is not a nucleotide base')
+        none
 
     if c1 == 'G':
         c2 = 'C'
@@ -118,7 +118,7 @@ def aminoacid(a, b, c):
     elif c1 == 'u':
         c2 = 'A'
     else:
-        print('trna error: that is not a nucleotide base')
+        none
 
     trna_sequence = a2 + b2 + c2
     print('tRNA Sequence: ' + trna_sequence)
@@ -294,7 +294,7 @@ def aminoacid(a, b, c):
     elif mrna_sequence == 'UGA':
         print('End Codon')
     else:
-        print('There is no amino acid!')
+        none
 
 allow = set("GCTAgcta")
 x = y = z = 1
