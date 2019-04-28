@@ -293,20 +293,72 @@ def aminoacid(a, b, c):
         print('End Codon')
     elif mrna_sequence == 'UGA':
         print('End Codon')
-
     else:
         print('There is no amino acid!')
 
+allow = set("GCTAgcta")
+x = y = z = 1
+
 input1 = input("first dna nucleotide base ")
+#idiot proofing
+while x != 0:
+    if set(input1).issubset(allow):
+        print("First codon is good")
+        x = 0
+    else:
+        input1 = input("Input a valid codon:")
+        x = 1
 input2 = input("second dna nucleotide base ")
+#more idiot proofing
+while y != 0:
+    if set(input2).issubset(allow):
+        print("Second codon is good")
+        y = 0
+    else:
+        input2 = input("Input a valid codon:")
+        y = 1
 input3 = input("third dna nucleotide base ")
+while z != 0:
+    if set(input3).issubset(allow):
+        print("Third codon is good")
+        z = 0
+    else:
+        input3 = input("Input a valid codon")
+        z = 1
 
 aminoacid(input1, input2, input3)
-
 repeat = input("do you want to put in another nucleotide base? [y/n] ")
-while repeat == 'y':
-    input1 = input("first dna nucleotide base: ")
-    input2 = input("second dna nucleotide base: ")
-    input3 = input("third dna nucleotide base: ")
-    aminoacid(input1, input2, input3)
-    repeat = input("do you want to put in another nucleotide base? [y/n] ")
+while repeat != 'n':
+    x = y = z = 1
+    if repeat == 'y':
+        input1 = input("first dna nucleotide base: ")
+        #idiot proofing
+        while x != 0:
+            if set(input1).issubset(allow):
+                print("First codon is good")
+                x = 0
+            else:
+                input1 = input("Input a valid codon:")
+                x = 1
+        input2 = input("second dna nucleotide base: ")
+        while y != 0:
+            if set(input2).issubset(allow):
+                print("Second codon is good")
+                y = 0
+            else:
+                input2 = input("Input a valid codon:")
+                y = 1
+        input3 = input("third dna nucleotide base: ")
+        while z != 0:
+            if set(input3).issubset(allow):
+                print("Third codon is good")
+                z = 0
+            else:
+                input3 = input("Input a valid codon")
+                z = 1
+        aminoacid(input1, input2, input3)
+        repeat = input("do you want to put in another nucleotide base? [y/n] ")
+    elif repeat == 'n':
+        exit
+    else:
+        repeat = input("Please input a valid value, y or n: ")
